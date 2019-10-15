@@ -3,7 +3,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   console.log("Hello!");
-  res.status(200).send("Hello World! This is new!");
+  res.status(200).sendFile(__dirname + "/index.html");
 });
 
 module.exports = app;
